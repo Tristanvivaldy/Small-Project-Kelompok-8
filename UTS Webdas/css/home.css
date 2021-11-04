@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    overflow:hidden;
 }
 @font-face {
     font-family:'FontJudul';
@@ -14,11 +15,14 @@
     background-repeat: no-repeat;
 }
 .navbar {
-    width: auto;
+    width: 100%;
     height: 40px;
     background-color:#ffc81f;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding:5px 0px;
+    z-index: 2;
+    position: absolute;
+    overflow:visible;
 }
 .logoHFT {
     position: absolute;
@@ -60,8 +64,7 @@
     margin-left: 20px;
     padding: 0px 20px;
     background-color: #ffc81f;
-    font-family: 'FontMenu';
-    
+    font-family: 'FontMenu';   
 }
 .isitempat {
     font-size: 16px;
@@ -70,6 +73,7 @@
     color: black;
     text-align: center;
     margin-bottom: 5px;
+    z-index:2;
 }
 .menukanan {
     display: inline;
@@ -133,3 +137,84 @@
 }
 /* Menu Tutup */
 
+/* Tampilan Home */
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/Home/Background.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gambarslide {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%) scale(1.05);
+    transition: 0.5s;
+    display: inline-block;
+    box-shadow: 2px 3px 12px 2px white;
+}
+div section img {
+    width: 600px;
+    height: 300px;
+    float: left;
+    
+}
+@keyframes sliding {
+    0% {left :0;}
+    10% {left :0;}
+    13% {left: -600px;}
+    20% {left: -600px;}
+    30% {left: -600px;}
+    33% {left: -1200px;}
+    40% {left: -1200px;}
+    50% {left: -1200px;}
+    53% {left: -1800px;}
+    60% {left: -1800px;}
+    70% {left: -1800px;}
+    73% {left: -2400px;}
+    80% {left: -2400px;}
+    90% {left: -2400px;}
+    93% {left: 0px;}
+    100% {left: 0px;}
+}
+div section{
+position: relative;
+width: 510%;
+animation: sliding 15s infinite;
+}
+#gambarslide:hover {
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.75;
+}
+#gambarslide section:hover {
+    animation-play-state: paused;
+}
+#btn {
+    display: inline-block;
+    margin-top:170px;
+    width: 100%;
+    text-align: center;
+}
+.buton {
+    margin-top: 300px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.2;
+    border: 1px solid black;
+}
+.buton:hover {
+    background-color: black;
+}
+div a {
+    overflow: hidden;
+}
