@@ -131,5 +131,34 @@
     background-color:#fbff00 ;
     border-radius: 10px;
 }
+.about{
+    width: 500px;
+    text-align: justify;
+    font-size: 30px;
+    margin: auto;
+    color: white;
+    margin-top: 130px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    padding: 40px;
+    color: rgb(255, 177, 0);
+    margin-bottom: 60px;
+}
+.foto{
+    position: absolute;
+    left: 57%;
+    margin-top: 380px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);;
+
+}
+body{
+    background-image: url(../assets/Background.jpg);
+}
+#judul1{
+    color: rgb(255, 146, 0);
+}
+
 /* Menu Tutup */
 
